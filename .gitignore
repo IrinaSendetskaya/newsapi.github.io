@@ -1,7 +1,9 @@
 target/*
 doc/*
+node_modules/*
 .settings/*
 .project/*
+.vscode/*
 .project
 .classpath
 *.class
