@@ -7,9 +7,9 @@ module.exports = {
         'app': './src/main.ts'
       },
    output:{
-       path: path.resolve(__dirname, './public'),   
+       path: path.resolve(__dirname, './public'),     
        publicPath: '/public/',
-       filename: "[name].js"      
+       filename: "[name].js"       
    },
    resolve: {
     extensions: ['.ts', '.js']
@@ -31,7 +31,7 @@ module.exports = {
    plugins: [
     new webpack.ContextReplacementPlugin(
         /angular(\\|\/)core/,
-        path.resolve(__dirname, 'src'),
+        path.resolve(__dirname, 'src'), 
       {} 
     ),
     new UglifyJSPlugin()
